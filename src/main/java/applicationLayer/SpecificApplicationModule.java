@@ -1,4 +1,4 @@
-package ApplicationLayer;
+package applicationLayer;
 
 import domainLayer.Module;
 
