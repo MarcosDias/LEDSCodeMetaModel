@@ -8,7 +8,11 @@ import util.defaultInfrastructure.DefaultInfrastructureProject;
  * @author MarcosDias
  */
 public class DefaultInfrastructureTest extends TestCase{
-    Infrastructure infra = DefaultInfrastructureProject.create();
+    Infrastructure infra;
+
+    public void setUp(){
+        infra = DefaultInfrastructureProject.create();
+    }
 
     public void testLanguage(){
         assertEquals(infra.getLanguage().getName(), "Java");
