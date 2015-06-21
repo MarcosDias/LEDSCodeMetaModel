@@ -1,5 +1,7 @@
 package model.mainLayer;
 
+import lombok.Getter;
+import lombok.Setter;
 import model.applicationLayer.Application;
 import model.domainLayer.Domain;
 import model.infrastructureLayer.Infrastructure;
@@ -11,6 +13,8 @@ import java.util.Set;
 /**
  * @author MarcosDias
  */
+@Setter
+@Getter
 public class Project {
     private String name;
     private Calendar created;

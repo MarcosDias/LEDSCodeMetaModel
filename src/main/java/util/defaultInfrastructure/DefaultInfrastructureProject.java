@@ -10,35 +10,34 @@ import java.util.Set;
  */
 @AllArgsConstructor
 public class DefaultInfrastructureProject {
-    private static Infrastructure infra;
+    private static Infrastructure infra = new Infrastructure();
 
     public static Infrastructure create() {
-        infra = new Infrastructure();
-//        infra.setLanguage(createDefaultLanguage());
-        infra.setBasePackage("br.edu.ifes.leds.sincap.controleInterno");
-        infra.getFrameworks().add(createDefaultDatabaseFramework());
-        infra.getFrameworks().add(createDefaultLanguageFramework());
+        infra.setLanguage(createDefaultLanguage());
+        infra.setBasePackage("br.edu.sr.ifes.leds.sincap.controleInterno");
+        infra.setDbFramework(createDefaultDatabaseFramework());
+        infra.setLanguageFramework(createDefaultLanguageFramework());
         return infra;
     }
 
-    private static Framework createDefaultLanguageFramework() {
-        Framework framework = new LanguageFramework();
+    private static LanguageFramework createDefaultLanguageFramework() {
+        LanguageFramework framework = new LanguageFramework();
         framework.setName("Spring Roo");
         framework.setVersion("1.0");
         return framework;
     }
 
-    private static Framework createDefaultDatabaseFramework() {
-        Framework db = new DatabaseFramework();
+    private static DatabaseFramework createDefaultDatabaseFramework() {
+        DatabaseFramework db = new DatabaseFramework();
         db.setName("HIBERNATE");
         db.setVersion("1.0");
         return db;
     }
 
-//    private static Language createDefaultLanguage() {
-//        Language lang = new Language();
-//        lang.setName("Java");
-//        lang.setVersion("8");
-//        return lang;
-//    }
+    private static Language createDefaultLanguage() {
+        Language lang = new Language();
+        lang.setName("Java");
+        lang.setVersion("8");
+        return lang;
+    }
 }
