@@ -8,7 +8,6 @@ import java.util.Set;
 /**
  * @author MarcosDias
  */
-@AllArgsConstructor
 public class DefaultInfrastructureProject {
     private static Infrastructure infra = new Infrastructure();
 

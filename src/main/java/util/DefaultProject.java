@@ -3,6 +3,7 @@ package util;
 import lombok.AllArgsConstructor;
 import model.applicationLayer.Application;
 import model.mainLayer.Project;
+import util.defaultDomain.DefaulDomainProject;
 import util.defaultInfrastructure.DefaultInfrastructureProject;
 
 import java.util.Calendar;
@@ -18,7 +19,6 @@ import java.util.Set;
  *     Sincap – Sistema de Informação de Notificação e Captação de Córnea
  * </a>.
  */
-@AllArgsConstructor
 public class DefaultProject {
     private static Project project;
 
@@ -27,24 +27,25 @@ public class DefaultProject {
         project.setName("Modulo Sincap");
         project.setCreated(Calendar.getInstance());
         project.setInfrastructure(DefaultInfrastructureProject.create());
+//        project.getDomains().add(DefaulDomainProject.create());
 
 
-        project.setApplications(createDefaultSetApplication());
+//        project.setApplications(createDefaultSetApplication());
 
         return project;
     }
-
-    private static Set<Application> createDefaultSetApplication() {
-        Set<Application> applications = new HashSet<Application>();
-        applications.add(createDefaultApplication());
-        return applications;
-    }
-
-    private static Application createDefaultApplication() {
-        Application app = new Application();
-        app.setName("");
-//        app.set
-
-        return null;
-    }
+//
+//    private static Set<Application> createDefaultSetApplication() {
+//        Set<Application> applications = new HashSet<Application>();
+//        applications.add(createDefaultApplication());
+//        return applications;
+//    }
+//
+//    private static Application createDefaultApplication() {
+//        Application app = new Application();
+//        app.setName("");
+////        app.set
+//
+//        return null;
+//    }
 }
