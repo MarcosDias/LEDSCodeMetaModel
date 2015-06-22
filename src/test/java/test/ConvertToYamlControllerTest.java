@@ -12,11 +12,9 @@ import static test.util.SimpleFabricProject.createSimpleProject;
  */
 public class ConvertToYamlControllerTest extends TestCase{
     Project proj;
-    ConvertToYamlController conv;
 
     public void setUp(){
         proj = createSimpleProject();
-        conv = new ConvertToYamlController();
     }
 
     public void testConvertToYamlProject(){
