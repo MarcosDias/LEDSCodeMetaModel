@@ -18,7 +18,7 @@ import java.util.Set;
 public class Project {
     private String name;
     private Calendar created;
-    private Interface Interface;
+    private Interface iface;
     private Infrastructure infrastructure;
     private Set<Domain> domains;
     private Set<Application> applications;

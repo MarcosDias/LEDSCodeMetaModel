@@ -18,7 +18,7 @@ public class SimpleFabricProject {
         p.setApplications(new HashSet<Application>());
         p.setDomains(new HashSet<Domain>());
         p.setInfrastructure(new Infrastructure());
-        p.setInterface(new Interface());
+        p.setIface(new Interface());
         p.setCreated(Calendar.getInstance());
         p.setName("SimpleProject");
 

@@ -16,6 +16,7 @@ import java.util.Set;
 @NoArgsConstructor
 public class Infrastructure {
     private String basePackage;
+    private String projectVersion;
     private Set<DataBase> dataBases;
     private Language language;
     private DatabaseFramework dbFramework;
