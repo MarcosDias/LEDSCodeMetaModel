@@ -7,23 +7,22 @@ import lombok.Getter;
  */
 @Getter
 public enum Environment {
-    DEV("dev"), 
-    PROD("prod");
-    
-    private String valor;
-    
-    Environment(String valor){
-    	this.valor = valor;
-    }
-    
-    public static Environment fromString(String _valor) {
-        if (_valor != null) {
-          for (Environment v : Environment.values()) {
-            if (_valor.equalsIgnoreCase(v.valor)) {
-              return v;
-            }
-          }
-        }
-        return null;
-      }
+	DEV("dev"), PROD("prod");
+
+	private String valor;
+
+	Environment(String valor) {
+		this.valor = valor;
+	}
+
+	public static Environment fromString(String _valor) {
+		if (_valor != null) {
+			for (Environment v : Environment.values()) {
+				if (_valor.equalsIgnoreCase(v.valor)) {
+					return v;
+				}
+			}
+		}
+		return null;
+	}
 }
