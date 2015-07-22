@@ -9,6 +9,5 @@ import lombok.Setter;
 @Getter
 @Setter
 public class DomainExternalServiceMethod extends ExternalServiceMethod {
-    private String domain;
-    private String module;
+
 }

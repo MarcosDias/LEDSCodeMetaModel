@@ -12,5 +12,5 @@ import lombok.Setter;
 @Setter
 public class Repository {
     private String name;
-    private Set<Method> methods;
+    private Set<ServiceMethod> methods;
 }
