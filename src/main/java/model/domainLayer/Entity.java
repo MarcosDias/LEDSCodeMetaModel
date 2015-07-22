@@ -12,7 +12,7 @@ import java.util.Set;
 @Setter
 public class Entity {
     private boolean abstrato;
-    private Set<Repository> repositories;
+    private Repository repository;
     private Set<Entity> classExtends;
     private AccessModifier accessModifier;
     private Set<Attribute> attributes;
