@@ -13,8 +13,7 @@ import java.util.Set;
 public class Entity {
     private boolean abstrato;
     private Set<Repository> repositories;
-    private Entity classExtends;
-    private Set<Entity> classImplements;
+    private Set<Entity> classExtends;
     private AccessModifier accessModifier;
     private Set<Attribute> attributes;
 }
