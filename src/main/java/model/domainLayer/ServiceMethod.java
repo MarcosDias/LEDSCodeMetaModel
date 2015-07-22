@@ -9,5 +9,4 @@ import lombok.Setter;
 @Getter
 @Setter
 public abstract class ServiceMethod {
-    private String name;
 }
