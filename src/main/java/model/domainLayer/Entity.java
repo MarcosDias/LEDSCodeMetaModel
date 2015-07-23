@@ -10,7 +10,7 @@ import java.util.Set;
  */
 @Getter
 @Setter
-public class Entity {
+public class Entity extends SuperClass{
     private boolean abstrato;
     private Repository repository;
     private Set<Entity> classExtends;

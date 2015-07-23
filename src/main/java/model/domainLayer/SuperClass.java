@@ -1,8 +1,13 @@
 package model.domainLayer;
 
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  * @author MarcosDias
  */
-public abstract class SuperClass {
+@Getter
+@Setter
+public abstract class SuperClass extends Classifier{
     private String name;
 }
