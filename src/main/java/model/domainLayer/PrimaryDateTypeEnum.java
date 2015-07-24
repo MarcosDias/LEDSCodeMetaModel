@@ -26,4 +26,15 @@ public enum PrimaryDateTypeEnum {
     PrimaryDateTypeEnum(String _value) {
         value = _value;
     }
+    
+    public static PrimaryDateTypeEnum fromString(String _valor) {
+		if (_valor != null) {
+			for (PrimaryDateTypeEnum v : PrimaryDateTypeEnum.values()) {
+				if (_valor.equalsIgnoreCase(v.value)) {
+					return v;
+				}
+			}
+		}
+		return null;
+	}
 }
