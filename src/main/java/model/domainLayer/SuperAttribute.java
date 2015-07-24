@@ -9,7 +9,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public abstract class SuperAttribute {
-    private String name;
-    private Classifier datetype;
-    private CollectionType collectionType;
+    protected String name;
+    protected Classifier datetype;
+    protected CollectionType collectionType;
 }
