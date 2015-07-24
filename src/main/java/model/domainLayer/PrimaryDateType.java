@@ -1,5 +1,6 @@
 package model.domainLayer;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,6 +9,7 @@ import lombok.Setter;
  */
 @Setter
 @Getter
+@AllArgsConstructor
 public class PrimaryDateType extends Classifier {
     private PrimaryDateTypeEnum type;
 }
