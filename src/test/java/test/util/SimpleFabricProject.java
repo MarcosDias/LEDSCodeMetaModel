@@ -1,13 +1,13 @@
 package test.util;
 
+import java.util.Calendar;
+import java.util.LinkedHashSet;
+
 import model.applicationLayer.Application;
 import model.domainLayer.Domain;
 import model.infrastructureLayer.Infrastructure;
 import model.interfaceLayer.Interface;
 import model.mainLayer.Project;
-
-import java.util.Calendar;
-import java.util.HashSet;
 
 /**
  * @author MarcosDias
@@ -15,8 +15,8 @@ import java.util.HashSet;
 public class SimpleFabricProject {
     public static Project createSimpleProject() {
         Project p = new Project();
-        p.setApplications(new HashSet<Application>());
-        p.setDomains(new HashSet<Domain>());
+        p.setApplications(new LinkedHashSet<Application>());
+        p.setDomains(new LinkedHashSet<Domain>());
         p.setInfrastructure(new Infrastructure());
         p.setIface(new Interface());
         p.setCreated(Calendar.getInstance());

@@ -1,11 +1,16 @@
 package model.applicationLayer;
 
-import java.util.Set;
+import java.util.LinkedHashSet;
+
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * @author MarcosDias
  */
+@Getter
+@Setter
 public class ApplicationStructure {
     private String name;
-    private Set<SpecificApplication> specificApplications;
+    private LinkedHashSet<SpecificApplication> specificApplications;
 }

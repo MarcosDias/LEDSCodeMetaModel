@@ -1,6 +1,6 @@
 package model.domainLayer;
 
-import java.util.Set;
+import java.util.LinkedHashSet;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -12,5 +12,5 @@ import lombok.Setter;
 @Setter
 public class Repository {
     private String name;
-    private Set<Method> methods;
+    private LinkedHashSet<Method> methods;
 }

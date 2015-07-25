@@ -1,9 +1,9 @@
 package model.domainLayer;
 
+import java.util.LinkedHashSet;
+
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.Set;
 
 /**
  * @author MarcosDias
@@ -12,7 +12,7 @@ import java.util.Set;
 @Getter
 public class Module {
     private String name;
-    private Set<Service> services;
-    private Set<ClassEnum> enums;
-    private Set<Entity> entities;
+    private LinkedHashSet<Service> services;
+    private LinkedHashSet<ClassEnum> enums;
+    private LinkedHashSet<Entity> entities;
 }

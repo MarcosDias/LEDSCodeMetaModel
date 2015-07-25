@@ -1,9 +1,9 @@
 package model.domainLayer;
 
+import java.util.LinkedHashSet;
+
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.Set;
 
 /**
  * @author MarcosDias
@@ -13,5 +13,5 @@ import java.util.Set;
 public class Method {
     private String name;
     private Classifier returnMethod;
-    private Set<Parameter> parameters;
+    private LinkedHashSet<Parameter> parameters;
 }

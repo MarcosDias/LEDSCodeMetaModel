@@ -1,9 +1,9 @@
 package model.domainLayer;
 
+import java.util.LinkedHashSet;
+
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.Set;
 
 /**
  * @author MarcosDias
@@ -12,5 +12,5 @@ import java.util.Set;
 @Getter
 public abstract class ExternalServiceMethod {
     private String service;
-    private Set<Service> services;
+    private LinkedHashSet<Service> services;
 }

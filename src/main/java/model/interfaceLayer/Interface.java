@@ -1,6 +1,6 @@
 package model.interfaceLayer;
 
-import java.util.Set;
+import java.util.LinkedHashSet;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -12,5 +12,5 @@ import lombok.Setter;
 @Setter
 public class Interface {
     private String name;
-    private Set<InterfaceApplication> interfaceApplication;
+    private LinkedHashSet<InterfaceApplication> interfaceApplication;
 }

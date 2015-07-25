@@ -1,9 +1,9 @@
 package model.domainLayer;
 
+import java.util.LinkedHashSet;
+
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.Set;
 
 /**
  * @author MarcosDias
@@ -12,5 +12,5 @@ import java.util.Set;
 @Setter
 public class Service {
     private String name;
-    private Set<ServiceMethod> methods;
+    private LinkedHashSet<ServiceMethod> methods;
 }

@@ -9,5 +9,5 @@ import lombok.Setter;
 @Getter
 @Setter
 public abstract class SuperClass extends Classifier{
-    protected String name;
+	protected String name;
 }

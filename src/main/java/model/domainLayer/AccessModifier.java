@@ -1,9 +1,12 @@
 package model.domainLayer;
 
+import lombok.Getter;
+
 
 /**
  * @author MarcosDias
  */
+@Getter
 public enum AccessModifier {
     PRIVATE("Private"), PROTECTED("Protected");
     
