@@ -12,6 +12,6 @@ import lombok.Setter;
 @Setter
 public class Method {
     private String name;
-    private Classifier returnMethod;
+    private ReturnType returnMethod;
     private LinkedHashSet<Parameter> parameters;
 }
