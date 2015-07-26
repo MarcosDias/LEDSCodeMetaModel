@@ -10,4 +10,5 @@ import lombok.Setter;
 @Getter
 public class InternalServiceMethod extends ServiceMethod {
     private Method method;
+    private Entity entity;
 }
