@@ -11,16 +11,4 @@ import lombok.Setter;
 public class Attribute extends SuperAttribute {
     private AccessModifier accessModifier;
     private String name;
-    
-    public String genericType(){
-    	if(this.datetype instanceof SuperClass){
-    		SuperClass sClass =  (SuperClass) this.datetype;
-    		return sClass.getName();
-    	}
-    	else {
-    		PrimaryDateType primaryDateType = (PrimaryDateType) this.datetype;
-    		return primaryDateType.getType().getValue();
-    	}
-    	
-    }
 }
