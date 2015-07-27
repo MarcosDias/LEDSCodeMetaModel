@@ -13,6 +13,8 @@ public class InternalServiceMethod extends ServiceMethod {
     private Entity entity;
     
     public String methodAcess(){
-    	return this.entity.name + this.entity.getRepository().getName() + this.method.getName();
+    	return this.entity.name + "." 
+    			+ this.entity.getRepository().getName() + "."
+    			+ this.method.getName();
     }
 }
