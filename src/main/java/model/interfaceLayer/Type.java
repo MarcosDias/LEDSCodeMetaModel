@@ -1,9 +1,12 @@
 package model.interfaceLayer;
 
+import lombok.Getter;
+
 
 /**
  * @author MarcosDias
  */
+@Getter
 public enum Type {
     HTMLVIEW("HtmlView"), RESTFULL("RestFull");
     

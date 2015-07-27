@@ -12,5 +12,5 @@ import lombok.Setter;
 @Getter
 public class Application {
     private String name;
-    private LinkedHashSet<SpecificApplicationDomain> first;
+    private LinkedHashSet<SpecificApplicationDomain> structure;
 }

@@ -8,4 +8,5 @@ import model.domainLayer.Domain;
 @Setter
 public class SpecificApplicationDomain extends SpecificApplication{
 	private Domain domain;
+	private SpecificApplicationModule son;
 }

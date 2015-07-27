@@ -11,4 +11,5 @@ import model.domainLayer.Service;
 @Setter
 public class SpecificApplicationService extends SpecificApplication {
     private Service service;
+    private SpecificApplicationMethod son;
 }

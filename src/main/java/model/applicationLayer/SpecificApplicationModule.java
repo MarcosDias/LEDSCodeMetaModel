@@ -11,4 +11,5 @@ import model.domainLayer.Module;
 @Setter
 public class SpecificApplicationModule extends SpecificApplication {
     private Module module;
+    private SpecificApplicationService son;
 }
