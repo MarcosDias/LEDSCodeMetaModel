@@ -9,5 +9,5 @@ import lombok.Setter;
 @Getter
 @Setter
 public abstract class SpecificApplication {
-    private String path;
+    protected SpecificApplication son;
 }
