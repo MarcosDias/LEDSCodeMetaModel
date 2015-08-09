@@ -12,5 +12,6 @@ import lombok.Setter;
 @Setter
 public class Service {
     private String name;
+    private Module parent;
     private LinkedHashSet<ServiceMethod> methods;
 }
