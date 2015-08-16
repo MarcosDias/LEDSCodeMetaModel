@@ -11,4 +11,5 @@ import lombok.Setter;
 public class Attribute extends SuperAttribute {
     private AccessModifier accessModifier;
     private String name;
+    private Constraints constraints;
 }
