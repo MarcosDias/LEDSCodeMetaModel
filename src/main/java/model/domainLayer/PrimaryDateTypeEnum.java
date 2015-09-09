@@ -19,7 +19,7 @@ public enum PrimaryDateTypeEnum {
     OBJECTDOUBLE("Double"),
     FLOAT("float"),
     SUPERFLOAT("Float"),
-    DATETIME("DatiTime"),
+    DATETIME("Datetime"),
     OBJECT("Object");
 
     private String value;
@@ -30,7 +30,7 @@ public enum PrimaryDateTypeEnum {
     public static PrimaryDateTypeEnum fromString(String _valor) {
 		if (_valor != null) {
 			for (PrimaryDateTypeEnum v : PrimaryDateTypeEnum.values()) {
-				if (_valor.equalsIgnoreCase(v.value)) {
+				if (_valor.equals(v.value)) {
 					return v;
 				}
 			}

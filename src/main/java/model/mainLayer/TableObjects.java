@@ -1,8 +1,10 @@
 package model.mainLayer;
 
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import model.applicationLayer.Application;
 import model.domainLayer.ClassEnum;
@@ -25,4 +27,13 @@ public class TableObjects {
 	private Set<Entity> entities;
 	private Set<Service> services;
 	private Set<ClassEnum> enums;
+	
+	public TableObjects() {
+		domains = new LinkedHashSet<Domain>();
+		apps = new LinkedHashSet<Application>();
+		modules = new LinkedHashSet<Module>();
+		entities = new LinkedHashSet<Entity>();
+		services = new LinkedHashSet<Service>();
+		enums = new LinkedHashSet<ClassEnum>();
+	}
 }

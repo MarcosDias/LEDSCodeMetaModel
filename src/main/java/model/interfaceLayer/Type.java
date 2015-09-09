@@ -19,7 +19,7 @@ public enum Type {
     public static Type fromString(String _valor) {
 		if (_valor != null) {
 			for (Type v : Type.values()) {
-				if (_valor.equalsIgnoreCase(v.valor)) {
+				if (_valor.equals(v.valor)) {
 					return v;
 				}
 			}

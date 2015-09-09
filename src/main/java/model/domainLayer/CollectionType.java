@@ -18,7 +18,7 @@ public enum CollectionType {
 	public static CollectionType fromString(String _valor) {
 		if (_valor != null) {
 			for (CollectionType v : CollectionType.values()) {
-				if (_valor.equalsIgnoreCase(v.valor)) {
+				if (_valor.equals(v.valor)) {
 					return v;
 				}
 			}

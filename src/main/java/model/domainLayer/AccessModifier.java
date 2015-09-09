@@ -8,7 +8,7 @@ import lombok.Getter;
  */
 @Getter
 public enum AccessModifier {
-    PRIVATE("Private"), PROTECTED("Protected");
+    PRIVATE("private"), PROTECTED("protected");
     
     private String valor;
 
@@ -19,7 +19,7 @@ public enum AccessModifier {
 	public static AccessModifier fromString(String _valor) {
 		if (_valor != null) {
 			for (AccessModifier v : AccessModifier.values()) {
-				if (_valor.equalsIgnoreCase(v.valor)) {
+				if (_valor.equals(v.valor)) {
 					return v;
 				}
 			}

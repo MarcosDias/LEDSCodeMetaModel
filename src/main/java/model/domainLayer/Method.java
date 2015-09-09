@@ -11,6 +11,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Method {
+	private Repository parent;
     private String name;
     private ReturnType returnMethod;
     private LinkedHashSet<Parameter> parameters;

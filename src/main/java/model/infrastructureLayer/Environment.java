@@ -18,7 +18,7 @@ public enum Environment {
 	public static Environment fromString(String _valor) {
 		if (_valor != null) {
 			for (Environment v : Environment.values()) {
-				if (_valor.equalsIgnoreCase(v.valor)) {
+				if (_valor.equals(v.valor)) {
 					return v;
 				}
 			}

@@ -8,6 +8,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public abstract class ServiceMethod {
-	protected String name;
+public class ServiceMethod {
+	private Method methodService;
+	private String  name;
 }
