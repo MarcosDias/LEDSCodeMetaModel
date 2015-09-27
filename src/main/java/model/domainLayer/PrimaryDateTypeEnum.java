@@ -19,8 +19,7 @@ public enum PrimaryDateTypeEnum {
     OBJECTDOUBLE("Double"),
     FLOAT("float"),
     SUPERFLOAT("Float"),
-    DATETIME("Datetime"),
-    OBJECT("Object");
+    DATETIME("Datetime");
 
     private String value;
     PrimaryDateTypeEnum(String _value) {
