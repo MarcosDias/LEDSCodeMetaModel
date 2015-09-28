@@ -1,10 +1,9 @@
 package model.mainLayer;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 import model.applicationLayer.Application;
 import model.domainLayer.ClassEnum;
@@ -21,19 +20,19 @@ public class TableObjects {
 	private Project project;
 	private Interface iface;
 	private Infrastructure infrastructure;
-	private Set<Domain> domains;
-	private Set<Application> apps;
-	private Set<Module> modules;
-	private Set<Entity> entities;
-	private Set<Service> services;
-	private Set<ClassEnum> enums;
+	private List<Domain> domains;
+	private List<Application> apps;
+	private List<Module> modules;
+	private List<Entity> entities;
+	private List<Service> services;
+	private List<ClassEnum> enums;
 	
 	public TableObjects() {
-		domains = new LinkedHashSet<Domain>();
-		apps = new LinkedHashSet<Application>();
-		modules = new LinkedHashSet<Module>();
-		entities = new LinkedHashSet<Entity>();
-		services = new LinkedHashSet<Service>();
-		enums = new LinkedHashSet<ClassEnum>();
+		domains = new ArrayList<Domain>();
+		apps = new ArrayList<Application>();
+		modules = new ArrayList<Module>();
+		entities = new ArrayList<Entity>();
+		services = new ArrayList<Service>();
+		enums = new ArrayList<ClassEnum>();
 	}
 }

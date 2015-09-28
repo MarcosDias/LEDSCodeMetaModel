@@ -1,6 +1,6 @@
 package model.domainLayer;
 
-import java.util.LinkedHashSet;
+import java.util.List;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -14,9 +14,9 @@ import model.domainLayer.interfaces.FullNamePath;
 public class Module implements FullNamePath{
     private String name;
     private Domain parent;
-    private LinkedHashSet<Service> services;
-    private LinkedHashSet<ClassEnum> enums;
-    private LinkedHashSet<Entity> entities;
+    private List<Service> services;
+    private List<ClassEnum> enums;
+    private List<Entity> entities;
     
     
 	public String fullNamePath() {

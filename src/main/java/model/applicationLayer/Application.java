@@ -1,6 +1,6 @@
 package model.applicationLayer;
 
-import java.util.LinkedHashSet;
+import java.util.List;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -12,5 +12,5 @@ import lombok.Setter;
 @Getter
 public class Application {
     private String name;
-    private LinkedHashSet<SpecificApplicationDomain> structure;
+    private List<SpecificApplicationDomain> structure;
 }

@@ -1,6 +1,6 @@
 package model.domainLayer;
 
-import java.util.LinkedHashSet;
+import java.util.List;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -14,7 +14,7 @@ import model.domainLayer.interfaces.FullNamePath;
 public class Service implements FullNamePath{
     private String name;
     private Module parent;
-    private LinkedHashSet<ServiceMethod> methods;
+    private List<ServiceMethod> methods;
     
     public String fullNamePath() {
 		return parent.getName() + "." + this.name;

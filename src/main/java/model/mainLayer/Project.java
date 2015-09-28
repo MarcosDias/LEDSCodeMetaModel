@@ -1,7 +1,7 @@
 package model.mainLayer;
 
 import java.util.Calendar;
-import java.util.LinkedHashSet;
+import java.util.List;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -20,6 +20,6 @@ public class Project {
     private Calendar created;
     private Interface iface;
     private Infrastructure infrastructure;
-    private LinkedHashSet<Domain> domains;
-    private LinkedHashSet<Application> applications;
+    private List<Domain> domains;
+    private List<Application> applications;
 }

@@ -1,6 +1,6 @@
 package model.domainLayer;
 
-import java.util.LinkedHashSet;
+import java.util.List;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -11,5 +11,5 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ClassEnum extends SuperClass {
-    private LinkedHashSet<String> values;
+    private List<String> values;
 }

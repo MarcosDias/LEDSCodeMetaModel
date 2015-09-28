@@ -1,6 +1,6 @@
 package model.domainLayer;
 
-import java.util.LinkedHashSet;
+import java.util.List;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -12,5 +12,5 @@ import lombok.Setter;
 @Getter
 public class Domain {
     private String name;
-    private LinkedHashSet<Module> modules;
+    private List<Module> modules;
 }
